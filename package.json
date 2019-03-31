@@ -1,0 +1,27 @@
+{
+  "name": "bitcamp-mentorship-server",
+  "version": "1.0.0",
+  "description": "Server for Bitcamp Mentorship App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitcamp/mentorship.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com//bitcamp/mentorship/issues"
+  },
+  "homepage": "https://github.com/bitcamp/mentorship#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "googleapis": "^33.0.0",
+    "http": "0.0.0",
+    "mongoose": "^5.2.17"
+  }
+}
