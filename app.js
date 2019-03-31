@@ -140,7 +140,7 @@ async function claimQuestion(req, res) {
                 "token" : user.fcmToken  
                 }
             }
-            axios.post(String(fcmUrl), notification_data, axiosConfig)
+            axios.post(new String(fcmUrl), notification_data, axiosConfig)
             .then(function (response) {
                 console.log("SUCCESS")
                // console.log(response);
@@ -162,7 +162,7 @@ app.post("/question", function(req, res) {
         "attachments":     [
         {
             "pretext" : `New Mentorship Request!`,
-            "text": `${req.body.name} has a question: "${question}" \nLocation: ${ req.body.location} \n Slack Usename: req.body.slackUsername`,
+            "text": `${req.body.name} has a question: "${question}" \nLocation: ${ req.body.location} \n Slack Username: ${req.body.slackUsername}`
             "fallback": "You are unable to claim this question",
             "callback_id": "claimquestion",
             "color": "#3AA3E3",
