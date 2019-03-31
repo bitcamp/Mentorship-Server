@@ -140,7 +140,7 @@ async function claimQuestion(req, res) {
                 "token" : user.fcmToken  
                 }
             }
-            axios.post(new String(fcmUrl), notification_data, axiosConfig)
+            axios.post(String(fcmUrl), notification_data, axiosConfig)
             .then(function (response) {
                 console.log("SUCCESS")
                // console.log(response);
